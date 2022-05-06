@@ -57,7 +57,7 @@ function goblinClickHandler(goblin) {
 
     if (playerHP === 0) return;
 
-    const playerHit = Math.random();
+    const playerHit = Math.random() * 5;
 
 
     if (playerHit < 1) {
@@ -76,15 +76,15 @@ function goblinClickHandler(goblin) {
         alert('You Missed!');
     }
     
-    const goblinHit = Math.random();
+    const goblinHit = Math.random() * 5;
     
     if (goblinHit < 1) {
         playerHP--;
     
         rickHPEl.textContent = playerHP;
-      
+    
         alert(`${goblin.name} hit you!`);
-      
+    
         if (playerHP === 0) {
             alert('Game Over');
             rickImgEl.classList.add('game-over');
