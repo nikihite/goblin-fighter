@@ -52,4 +52,44 @@ displayGoblins();
 
 function goblinClickHandler(goblin) {
     console.log(`I am clicking on ${goblin.name}`);
+
+    if (goblin.hp === 0) return;
+
+    if (playerHP === 0) return;
+
+    const playerHit = Math.random();
+
+
+    if (playerHit < 1) {
+
+        goblin.hp--;
+
+        displayGoblins();
+
+        alert(`You hit ${goblin.name}!`);
+
+        if (goblin.hp === 0) {
+            defeatedGoblinsCount++;
+            defeatedNumberEl.textContent = defeatedGoblinsCount;
+        }
+    } else {
+        alert('You Missed!');
+    }
+    
+    const goblinHit = Math.random();
+    
+    if (goblinHit < 1) {
+        playerHP--;
+    
+        rickHPEl.textContent = playerHP;
+      
+        alert(`${goblin.name} hit you!`);
+      
+        if (playerHP === 0) {
+            alert('Game Over');
+            rickImgEl.classList.add('game-over');
+        }
+    } else {
+        alert(`${goblin.name} tried to hit you and missed!`);
+    }
 }

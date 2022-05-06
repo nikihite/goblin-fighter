@@ -76,3 +76,12 @@ h1 {
     justify-self: flex-end;
     font-size: 40px;
 }
+
+.dead {
+    opacity: .2;
+    cursor: default;
+}
+
+.game-over {
+    transform: rotate(90deg);
+}
