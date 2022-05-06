@@ -8,7 +8,7 @@ const goblinsListEl = document.querySelector('.goblins');
 
 // let state
 let defeatedGoblinsCount = 0;
-let playerHP = 2;
+let playerHP = 8;
 let goblins = [
     { name: 'Doug', hp: 1 },
     { name: 'Russel', hp: 4 },
