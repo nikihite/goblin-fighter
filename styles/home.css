@@ -1,1 +1,78 @@
-/* add home page styles here */
+h1 {
+    font-size: 40px;
+    font-family: Chalkduster, fancy;
+    color: rgb(220, 254, 172)
+}
+
+.rick-stats {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#rick-img {
+    width: 300px;
+}
+
+.rick {
+    font-size: 60px;
+    font-weight: bold;
+    font-family: OCR A Std, monospace;
+    text-align: center
+}
+
+.rick p {
+    background-color: rgb(220, 254, 172);
+    border-radius: 50px;
+    padding: 20px
+}
+
+.goblin-stats {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.goblin-stats button {
+    height: 60px;
+    width: 180px;
+}
+
+.goblin-stats button {
+    font-size: 20px;
+    font-family: OCR A Std, monospace;
+    background-color: rgb(220, 254, 172);
+    border-radius: 50%;
+}
+.goblin-stats input {
+    font-size: 40px;
+    width: 70%
+}
+
+.defeated-goblins {
+    border: 3px solid;
+    font-size: 30px;
+    background-color: rgb(217, 55, 136);
+    border-radius: 50px;
+    font-weight: 900;
+    width: 360px;
+    text-align: center;
+}
+
+.goblin {
+    border: solid 3px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color: rgb(217, 55, 136);
+    justify-self: flex-end;
+    font-size: 40px;
+}
